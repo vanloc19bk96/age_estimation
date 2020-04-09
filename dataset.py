@@ -59,6 +59,3 @@ class AgeEstimationDataset(Dataset):
                       'age': self.labels[index],
                       'index': index}
             return sample
-
-
-

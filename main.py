@@ -13,6 +13,13 @@ def main():
     # prepare data
     dataset = data_preparetion.prepare_data(data_path)
 
+    best_MAEs = []
+    last_MAEs = []
+
+    for id in range(len(dataset['train'])):
+        # init model
+        model = model_preparetion.prepare_model()
+
 if __name__ == '__main__':
     main()
 
